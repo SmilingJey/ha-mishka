@@ -1,6 +1,6 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Артём Евсяков](https://up.htmlacademy.ru/htmlcss/22/user/637603).
+* Студент: [Артём Евсяков](https://htmlacademy.ru/profile/id637603).
 * Наставник: [Мурат Баркинхоев](https://htmlacademy.ru/profile/id186857).
 
 ---
