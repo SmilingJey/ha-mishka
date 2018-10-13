@@ -1,0 +1,38 @@
+.catalog__list {
+  margin: 0;
+  padding: 30px 30px 0;
+
+  list-style: none;
+}
+
+.catalog__item {
+  margin-bottom: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__list {
+    padding: 70px 50px 0;
+  }
+
+  .catalog__item {
+    margin-bottom: 55px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__list {
+    display: flex;
+    align-items: stretch;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 115px 0 0;
+  }
+
+  .catalog__item {
+    flex-grow: 1;
+    width: 33%;
+    margin-right: 25px;
+    margin-bottom: 55px;
+    margin-left: 25px;
+  }
+}

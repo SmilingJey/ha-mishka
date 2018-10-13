@@ -1,0 +1,228 @@
+.doods-week__inner {
+  box-sizing: border-box;
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-bottom: 40px;
+  padding-left: 30px;
+
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-repeat: repeat-x;
+  background-position: 0 100%;
+  background-size: auto 6px;
+}
+
+.goods-week__head {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.goods-week__label {
+  margin-top: 5px;
+
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 1.18;
+  color: #63d1bb;
+  text-transform: uppercase;
+}
+
+.goods-week__desc {
+  display: flex;
+  flex-direction: column;
+}
+
+.goods-week__header {
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 1.2;
+}
+
+.goods-week__text {
+  order: 1;
+  margin-top: 8px;
+  margin-bottom: 15px;
+
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.goods-week__table {
+  order: 2;
+  width: 100%;
+  margin-bottom: 30px;
+
+  border-collapse: collapse;
+}
+
+.goods-week__table-row {
+  height: 40px;
+
+  border-bottom: 1px solid #ececec;
+}
+
+.goods-week__table-header {
+  width: 85px;
+  padding-right: 10px;
+
+  font-weight: normal;
+  text-align: left;
+}
+
+.goods-week__image {
+  order: 3;
+  width: 100%;
+  height: auto;
+}
+
+.goods-week__price {
+  order: 4;
+  margin-top: 25px;
+  margin-bottom: 25px;
+
+  font-weight: bold;
+  font-size: 17px;
+  text-align: center;
+  color: #444444;
+}
+
+.goods-week__buy {
+  order: 5;
+}
+
+@media (min-width: $tablet-width) {
+  .doods-week__inner {
+    padding-right: 50px;
+    padding-left: 50px;
+
+    background-size: auto 15px;
+  }
+
+  .goods-week__head {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding-top: 12px;
+  }
+
+  .goods-week__label {
+    width: 80px;
+    margin-top: 12px;
+    margin-right: 20px;
+
+    font-size: 17px;
+    line-height: 17px;
+    text-align: center;
+  }
+
+  .goods-week__header {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .goods-week__desc {
+    position: relative;
+
+    display: block;
+    padding-top: 45px;
+    padding-bottom: 1px;
+
+    &::after {
+      content: "";
+
+      display: block;
+      clear: both;
+      margin-bottom: 25px;
+    }
+  }
+
+  .goods-week__image {
+    float: right;
+    width: 50%;
+  }
+
+  .goods-week__text,
+  .goods-week__table,
+  .goods-week__price,
+  .goods-week__buy {
+    width: 43.5%;
+  }
+
+  .goods-week__text {
+    margin-top: -8px;
+    margin-bottom: 35px;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .goods-week__table {
+    margin-bottom: 140px;
+  }
+
+  .goods-week__price {
+    position: absolute;
+    bottom: 80px;
+
+    margin-bottom: 30px;
+
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .goods-week__buy {
+    position: absolute;
+    bottom: 25px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .doods-week__inner {
+    position: relative;
+
+    max-width: 1050px;
+    margin: 0 auto;
+    padding-top: 25px;
+    padding-right: 0;
+    padding-bottom: 70px;
+    padding-left: 175px;
+
+    background-size: auto 20px;
+  }
+
+  .goods-week__head {
+    position: absolute;
+    top: 110px;
+    left: 40px;
+    z-index: 1;
+
+    flex-direction: row;
+  }
+
+  .goods-week__label {
+    margin-top: 17px;
+    margin-right: 50px;
+
+    font-size: 17px;
+    line-height: 17px;
+  }
+
+  .goods-week__header {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .goods-week__text {
+    margin-bottom: 48px;
+    padding-top: 165px;
+  }
+
+  .goods-week__image {
+    width: 60%;
+  }
+
+  .goods-week__text,
+  .goods-week__table,
+  .goods-week__price,
+  .goods-week__buy {
+    width: 33.3%;
+  }
+}

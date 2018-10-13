@@ -1,0 +1,48 @@
+.button {
+  display: block;
+  box-sizing: border-box;
+  padding: 14px 20px;
+
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+  text-align: center;
+  color: #444444;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: #ffffff;
+  border: solid 2px #444444;
+
+  transition: background-color 50ms linear;
+
+  &:hover {
+    color: #ffffff;
+
+    background-color: #444444;
+
+    transition: background-color 50ms linear;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &--add {
+    padding: 18px 20px;
+
+    line-height: 16px;
+    color: #ffffff;
+
+    background-color: #63d1bb;
+    border: none;
+
+    &:hover {
+      background-color: #63d1bb;
+    }
+
+    &:active {
+      color: rgba($color: #ffffff, $alpha: 0.3);
+    }
+  }
+}

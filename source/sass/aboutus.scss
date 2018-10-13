@@ -1,0 +1,120 @@
+.aboutus__inner {
+  padding-top: 10px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.aboutus__header {
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 1.2;
+}
+
+.aboutus__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.aboutus__item {
+  width: 260px;
+  margin-bottom: 25px;
+
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 1.18;
+
+  &::before {
+    content: "";
+
+    display: block;
+    width: 60px;
+    height: 60px;
+
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
+  }
+
+  &--ecology::before {
+    background-image: url("../img/icon-feature-flower.svg");
+  }
+
+  &--russian-price::before {
+    background-image: url("../img/icon-feature-money.svg");
+    background-position: 0 10px;
+  }
+
+  &--more-like::before {
+    background-image: url("../img/icon-feature-heart.svg");
+  }
+
+  &--handmade::before {
+    background-image: url("../img/icon-feature-ball.svg");
+    background-position: 6px 8px;
+  }
+
+  &--support-rusian::before {
+    background-image: url("../img/icon-feature-rocket.svg");
+    background-position: 0 8px;
+  }
+
+  &--gift::before {
+    background-image: url("../img/icon-feature-gift.svg");
+    background-position: 3px 5px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .aboutus__inner {
+    padding-top: 15px;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  .aboutus__header {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .aboutus__items {
+    display: flex;
+    padding-top: 5px;
+    padding-left: 5px;
+  }
+
+  .aboutus__list {
+    width: 50%;
+  }
+
+  .aboutus__item {
+    width: 320px;
+    margin-bottom: 50px;
+
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .aboutus__inner {
+    box-sizing: border-box;
+    max-width: 1050px;
+    margin: 0 auto;
+    padding-left: 170px;
+  }
+
+  .aboutus__header {
+    margin-bottom: 40px;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .aboutus__list {
+    width: 350px;
+
+    font-size: 20px;
+    line-height: 22px;
+  }
+}

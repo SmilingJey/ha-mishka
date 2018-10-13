@@ -1,0 +1,88 @@
+.page-header {
+  position: relative;
+  z-index: 1;
+}
+
+.page-header__inner {
+  border-bottom: 1px solid #ececec;
+}
+
+.page-header__logo {
+  display: block;
+  width: 120px;
+  height: 80px;
+  margin: 0 auto;
+
+  background-image: url("../img/logo-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 102px 34px;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.page-header__free-delivery {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__inner {
+    position: relative;
+
+    box-sizing: border-box;
+    height: 89px;
+    padding: 0 50px;
+  }
+
+  .page-header__logo {
+    position: absolute;
+    top: 22px;
+    left: 48px;
+    z-index: 1;
+
+    width: 113px;
+    height: 46px;
+
+    background-image: url("../img/logo-tablet.svg");
+    background-size: 113px 46px;
+  }
+
+  .page-header__free-delivery {
+    position: absolute;
+    top: 90px;
+    right: 50px;
+
+    display: inline;
+
+    font-size: 15px;
+    line-height: 24px;
+    color: #444444;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__inner {
+    max-width: 1150px;
+    margin: 0 auto;
+  }
+
+  .page-header__logo {
+    top: 10px;
+    right: 0;
+    left: 0;
+
+    width: 149px;
+    height: 72px;
+    margin: 0 auto;
+
+    background-image: url("../img/logo-desktop.svg");
+    background-size: 149px 72px;
+  }
+}
