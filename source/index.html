@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://api-maps.yandex.ru/2.1/?apikey=17ceedee-6a89-4b21-bc3e-f4ae5e5d795a&lang=ru_RU" type="text/javascript">
     </script>
+    <script>
+      document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.js" async></script>
   </head>
   <body>
     <header class="page-header">
@@ -69,7 +73,11 @@
             <b class="goods-week__header">Вязаные корзинки</b>
           </div>
           <div class="goods-week__desc">
-            <img class="goods-week__image" src="img/triple-set-desktop@1x.jpg" alt="Вязаные корзинки">
+            <picture class="goods-week__picture ">
+              <source media="(min-width: 1250px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+              <img class="goods-week__image" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязаные корзинки">
+            </picture>
             <p class="goods-week__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
             <table class="goods-week__table">
               <tr class="goods-week__table-row">
@@ -139,7 +147,13 @@
             </p>
           </div>
           <div id="yandex-map" class="contacts__map contacts__map--nojs">
-            <a href="https://yandex.ru/maps/-/CBBWABasHD" target="_blank"><img src="img/map.jpg" alt="Адрес магазина" /></a>
+            <a href="https://yandex.ru/maps/-/CBBWABasHD" target="_blank">
+              <picture>
+                <source media="(min-width: 1250px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+                <img src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Карта расположения магазина">
+              </picture>
+            </a>
           </div>
           <a class="contacts__writeus button" href="#">Напишите нам</a>
         </div>

@@ -1,13 +1,12 @@
 .product-card__photo-img {
   display: block;
-  width: 260px;
-  height: 196px;
+  width: 100%;
+  height: auto;
 }
 
 .product-card__text {
   box-sizing: border-box;
   padding: 5px 27px 0;
-
   border: 1px solid #ededed;
 
   &:hover {
@@ -145,13 +144,12 @@
 
   .product-card__desc {
     margin-bottom: 15px;
-
     font-size: 15px;
     line-height: 30px;
   }
 
   .product-card__price-basket {
-    margin-top: auto;
+    margin-bottom: 10px;
   }
 
   .product-card__price {
