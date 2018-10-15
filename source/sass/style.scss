@@ -1,0 +1,61 @@
+@import "normalize.scss";
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Open Sans"),
+    url("../fonts/opensans.woff2") format("woff2"),
+    url("../fonts/opensans.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: bold;
+  src: local("Open Sans Bold"),
+    url("../fonts/opensansbold.woff") format("woff2"),
+    url("../fonts/opensansbold.woff") format("woff");
+}
+
+$tablet-width: 768px;
+$desktop-width: 1250px;
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  body {
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+
+@import "visually-hidden.scss";
+@import "modal.scss";
+@import "page-header.scss";
+@import "main-menu.scss";
+@import "intro.scss";
+@import "goods-week.scss";
+@import "button.scss";
+@import "aboutus.scss";
+@import "reviews.scss";
+@import "contacts.scss";
+@import "page-footer.scss";
+@import "social.scss";
+@import "basket-add.scss";
+@import "catalog.scss";
+@import "content-head.scss";
+@import "product-card.scss";
+@import "production.scss";
+@import "order-form.scss";
+@import "form-fieldset.scss";
+@import "input-field.scss";
