@@ -79,6 +79,7 @@
 
   .aboutus__items {
     display: flex;
+    flex-wrap: wrap;
     padding-top: 5px;
     padding-left: 5px;
   }
