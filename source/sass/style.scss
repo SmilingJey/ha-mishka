@@ -18,6 +18,7 @@
     url("../fonts/opensansbold.woff") format("woff");
 }
 
+$mobile-only: 765px;
 $tablet-width: 768px;
 $desktop-width: 1150px;
 $retina-dpi: 144dpi;
@@ -43,6 +44,7 @@ body {
 @import "blocks/modal.scss";
 @import "blocks/page-header.scss";
 @import "blocks/main-menu.scss";
+@import "blocks/header-link.scss";
 @import "blocks/intro.scss";
 @import "blocks/goods-week.scss";
 @import "blocks/button.scss";
