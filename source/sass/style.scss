@@ -18,8 +18,9 @@
     url("../fonts/opensansbold.woff") format("woff");
 }
 
+$mobile-only: 765px;
 $tablet-width: 768px;
-$desktop-width: 1250px;
+$desktop-width: 1150px;
 $retina-dpi: 144dpi;
 $retina-dppx: 1.5dppx;
 
@@ -39,23 +40,24 @@ body {
   }
 }
 
-@import "visually-hidden.scss";
-@import "modal.scss";
-@import "page-header.scss";
-@import "main-menu.scss";
-@import "intro.scss";
-@import "goods-week.scss";
-@import "button.scss";
-@import "aboutus.scss";
-@import "reviews.scss";
-@import "contacts.scss";
-@import "page-footer.scss";
-@import "social.scss";
-@import "basket-add.scss";
-@import "catalog.scss";
-@import "content-head.scss";
-@import "product-card.scss";
-@import "production.scss";
-@import "order-form.scss";
-@import "form-fieldset.scss";
-@import "input-field.scss";
+@import "blocks/visually-hidden.scss";
+@import "blocks/modal.scss";
+@import "blocks/page-header.scss";
+@import "blocks/main-menu.scss";
+@import "blocks/header-link.scss";
+@import "blocks/intro.scss";
+@import "blocks/goods-week.scss";
+@import "blocks/button.scss";
+@import "blocks/aboutus.scss";
+@import "blocks/reviews.scss";
+@import "blocks/contacts.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/social.scss";
+@import "blocks/basket-add.scss";
+@import "blocks/catalog.scss";
+@import "blocks/content-head.scss";
+@import "blocks/product-card.scss";
+@import "blocks/production.scss";
+@import "blocks/order-form.scss";
+@import "blocks/form-fieldset.scss";
+@import "blocks/input-field.scss";
