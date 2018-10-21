@@ -1,7 +1,6 @@
 .content-head {
   display: flex;
   justify-content: center;
-  align-items: center;
   box-sizing: border-box;
   min-height: 177px;
   padding: 30px;
@@ -10,7 +9,7 @@
 }
 
 .content-head__header {
-  margin-top: 15px;
+  margin-top: 40px;
 
   font-weight: bold;
   font-size: 27px;
@@ -28,7 +27,7 @@
   }
 
   .content-head__header {
-    margin-top: 30px;
+    margin-top: 65px;
 
     font-size: 43px;
     line-height: 50px;
@@ -44,7 +43,6 @@
 
   .content-head__header {
     max-width: 1050px;
-    margin-top: 10px;
 
     font-size: 53px;
     line-height: 57px;

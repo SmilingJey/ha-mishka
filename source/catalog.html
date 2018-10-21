@@ -4,13 +4,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Мишка - Каталог</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <script>
-      document.createElement( "picture" );
+      document.createElement("picture");
     </script>
-    <script src="js/picturefill.js" async></script>
+    <script src="js/picturefill.min.js" async></script>
   </head>
   <body>
+    <div style="display: none;">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <header class="page-header page-header--nojs page-header--menu-close">
       <div class="page-header__inner">
         <p class="page-header__logo">
@@ -36,13 +39,13 @@
         <div class="page-header__search-cart">
           <a class="page-header__search header-link header-link--tablet-only-icon" href="">
             <span class="header-link__icon">
-                <img src="img/icon-search.svg" alt="поиск">
+              <svg width="18" height="18" aria-label="поиск по сайти"><use xlink:href="#icon-search"></use></svg>
             </span>
             <span class="header-link__text">Поиск по сайту</span>
           </a>
           <a class="page-header__card header-link" href="">
             <span class="header-link__icon">
-            <img src="img/icon-cart.svg" alt="поиск">
+              <svg width="21" height="19" aria-label="корзина"><use xlink:href="#icon-cart"></use></svg>
             </span>
             <span class="header-link__text">Корзина: пока пуста</span>
           </a>
@@ -60,6 +63,9 @@
             <div class="product-card__photo">
               <a href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.webp 1x, img/photo-hare-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.webp 1x, img/photo-hare-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-hare-mobile@1x.webp, img/photo-hare-mobile@2x.webp 2x">
                   <source media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
                   <img class="product-card__photo-img" src="img/photo-hare-mobile@1x.jpg" srcset="img/photo-hare-mobile@2x.jpg 2x" alt="Зайчик-попрыгайчик">
@@ -71,7 +77,11 @@
               <p class="product-card__desc">Рост 30 см, вес 200 г</p>
               <div class="product-card__price-basket">
                 <p class="product-card__price">1 200 руб.</p>
-                <p class="product-card__basket"><a class="js-basket-add" href="#"><img src="img/icon-cart.svg" width="21" height="18" alt="Добавить в корзин"></a></p>
+                <p class="product-card__basket">
+                  <a class="js-basket-add" href="#">
+                    <svg width="21" height="19" aria-label="Добавить в корзину"><use xlink:href="#icon-cart"></use></svg>
+                  </a>
+                </p>
               </div>
             </div>
           </li>
@@ -79,6 +89,9 @@
             <div class="product-card__photo">
               <a href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.webp 1x, img/photo-bowl-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.webp 1x, img/photo-bowl-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-bowl-mobile@1x.webp, img/photo-bowl-mobile@2x.webp 2x">
                   <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x">
                   <img class="product-card__photo-img" src="img/photo-bowl-mobile@1x.jpg" srcset="img/photo-bowl-mobile@2x.jpg 2x" alt="Корзинка для белья">
@@ -90,7 +103,11 @@
               <p class="product-card__desc">Диаметр 15 см, высота 10 см</p>
               <div class="product-card__price-basket">
                 <p class="product-card__price">690 руб.</p>
-                <p class="product-card__basket"><a class="js-basket-add" href="#"><img src="img/icon-cart.svg" width="21" height="18" alt="Добавить в корзин"></a></p>
+                <p class="product-card__basket">
+                  <a class="js-basket-add" href="#">
+                    <svg width="21" height="19" aria-label="Добавить в корзину"><use xlink:href="#icon-cart"></use></svg>
+                  </a>
+                </p>
               </div>
             </div>
           </li>
@@ -98,6 +115,9 @@
             <div class="product-card__photo">
               <a href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.webp 1x, img/photo-toys-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.webp 1x, img/photo-toys-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-toys-mobile@1x.webp, img/photo-toys-mobile@2x.webp 2x">
                   <source media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
                   <img class="product-card__photo-img" src="img/photo-toys-mobile@1x.jpg" srcset="img/photo-toys-mobile@2x.jpg 2x" alt="Большая корзинка для игрушек">
@@ -109,7 +129,11 @@
               <p class="product-card__desc">Диаметр 30 см, высота 30 см</p>
               <div class="product-card__price-basket">
                 <p class="product-card__price">1 500 руб.</p>
-                <p class="product-card__basket"><a class="js-basket-add" href="#"><img src="img/icon-cart.svg" width="21" height="18" alt="Добавить в корзин"></a></p>
+                <p class="product-card__basket">
+                  <a class="js-basket-add" href="#">
+                    <svg width="21" height="19" aria-label="Добавить в корзину"><use xlink:href="#icon-cart"></use></svg>
+                  </a>
+                </p>
               </div>
             </div>
           </li>
@@ -121,6 +145,9 @@
           <h2 class="production__header">Процесс производства</h2>
           <div class="production__video">
             <picture>
+              <source type="image/webp" media="(min-width: 1150px)" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/video-mobile@1x.webp, img/video-mobile@2x.webp 2x">
               <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
               <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Видео">
@@ -133,21 +160,34 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__inner">
-        <a class="page-footer__logo" href="index.html"><img class="page-footer__logo-img" src="img/logo-footer.svg" width="102" height="34" alt="Логотип Мишка"></a>
+        <p class="page-footer__logo">
+          <a href="index.html">
+            <svg class="page-footer__logo-img" width="102" height="34" aria-label="Логотип Мишка"><use xlink:href="#logo-footer"></use></svg>
+          </a>
+        </p>
         <ul class="page-footer__social social">
           <li class="social__item">
-            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy"><img src="img/icon-insta.svg" width="22" height="21" alt="Инстаграм"><span class="visually-hidden">Мы в Инстаграме</span></a>
+            <a class="social__link" href="https://www.instagram.com/htmlacademy">
+              <svg width="22" height="21" aria-label="Инстаграм"><use xlink:href="#icon-insta"></use></svg>
+              <span class="visually-hidden">Мы в Инстаграме</span>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><img src="img/icon-fb.svg" width="15" height="29" alt="Фейсбук"><span class="visually-hidden">Мы в Фейсбуке</span></a>
+            <a class="social__link" href="https://www.facebook.com/htmlacademy">
+              <svg width="15" height="29" aria-label="Фейсбук"><use xlink:href="#icon-fb"></use></svg>
+              <span class="visually-hidden">Мы в Фейсбуке</span>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru"><img src="img/icon-twitter.svg" width="23" height="20"  alt="Твиттер"><span class="visually-hidden">Мы в Твиттере</span></a>
+            <a class="social__link" href="https://twitter.com/htmlacademy_ru">
+              <svg width="23" height="20" aria-label="Твиттер"><use xlink:href="#icon-twitter"></use></svg>
+              <span class="visually-hidden">Мы в Твиттере</span>
+            </a>
           </li>
         </ul>
         <p class="page-footer__copyright">
-          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">Разработано<span class="visually-hidden"> в HTML Academy</span>
-          </a>
+          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">Разработано<span class="visually-hidden"> в HTML Academy</span><svg class="page-footer__copyright-icon" width="27" height="34" aria-label="Твиттер"><use xlink:href="#logo-htmlacademy"></use></svg>
+              </a>
         </p>
       </div>
     </footer>
@@ -160,16 +200,15 @@
           <div class="basket-add__size-buttons">
             <input class="visually-hidden basket-add__radio" type="radio" id="size-s" name="size" value="s" checked>
             <label class="basket-add__size" for="size-s" tabindex="0">S</label>
-            <input class="visually-hidden basket-add__radio" type="radio" id="size-m" name="size"  value="m">
+            <input class="visually-hidden basket-add__radio" type="radio" id="size-m" name="size" value="m">
             <label class="basket-add__size" for="size-m" tabindex="0">M</label>
-            <input class="visually-hidden basket-add__radio" type="radio" id="size-l" name="size"  value="l">
+            <input class="visually-hidden basket-add__radio" type="radio" id="size-l" name="size" value="l">
             <label class="basket-add__size" for="size-l" tabindex="0">L</label>
           </div>
           <button class="basket-add__button button button--add" type="submit">Добавить</button>
         </form>
       </div>
     </section>
-    <script src="js/main-menu.js"></script>
-    <script src="js/modal-basket.js"></script>
+    <script src="js/scripts.min.js"></script>
   </body>
 </html>
