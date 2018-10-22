@@ -39,6 +39,14 @@
 .product-card__link {
   color: #000000;
   text-decoration: none;
+
+  &:hover {
+    color: rgba(#000000, 0.6);
+  }
+
+  &:active {
+    color: rgba(#000000, 0.3);
+  }
 }
 
 .product-card__desc {
@@ -68,11 +76,12 @@
 .product-card__basket {
   margin-right: 3px;
 
-  img {
+  svg {
     opacity: 0.2;
 
     &:hover {
       opacity: 1;
+      fill: #63d1bb;
     }
 
     &:active {

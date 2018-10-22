@@ -36,7 +36,7 @@ if (yandexMap) {
     }
 
     yandexMap.classList.remove("contacts__map--nojs");
-  } catch {
+  } catch (e) {
     console.log("невозможно отобразить яндекс карты");
   }
 }

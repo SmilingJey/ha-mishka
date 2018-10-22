@@ -48,6 +48,10 @@
 
   &:active {
     opacity: 0.3;
+
+    &::after {
+      width: 88%;
+    }
   }
 
   &::after {

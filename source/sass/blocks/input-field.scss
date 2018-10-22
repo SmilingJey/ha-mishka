@@ -6,30 +6,6 @@
   background-color: transparent;
 }
 
-.input-field--with-icon {
-  position: relative;
-
-  .input-field__input {
-    padding-right: 40px;
-  }
-}
-
-.input-field__iconphone {
-  position: absolute;
-  right: 8px;
-  bottom: 35px;
-
-  opacity: 0.2;
-}
-
-.input-field__iconmail {
-  position: absolute;
-  right: 2px;
-  bottom: 28px;
-
-  opacity: 0.2;
-}
-
 .input-field__label {
   display: block;
   box-sizing: border-box;
@@ -170,6 +146,35 @@
   }
 }
 
+.input-field--with-icon {
+  position: relative;
+
+  .input-field__input {
+    padding-right: 40px;
+  }
+}
+
+.input-field__icon {
+  position: absolute;
+  opacity: 0.2;
+
+  &--phone {
+    right: 8px;
+    bottom: 35px;
+  }
+
+  &--mail {
+    right: 2px;
+    bottom: 28px;
+  }
+}
+
+.input-field--with-icon .input-field__input--text:hover + .input-field__icon,
+.input-field--with-icon .input-field__input--text:focus + .input-field__icon {
+  fill: #62d1ba;
+  opacity: 1;
+}
+
 .input-field__input--textarea {
   box-sizing: border-box;
   width: 100%;
@@ -210,20 +215,16 @@
     }
   }
 
-  .input-field__iconphone {
-    position: absolute;
-    right: 25px;
-    bottom: 32px;
+  .input-field__icon {
+    &--phone {
+      right: 25px;
+      bottom: 32px;
+    }
 
-    opacity: 0.2;
-  }
-
-  .input-field__iconmail {
-    position: absolute;
-    right: 22px;
-    bottom: 25px;
-
-    opacity: 0.2;
+    &--mail {
+      right: 23px;
+      bottom: 25px;
+    }
   }
 
   .input-field__label {
@@ -293,6 +294,18 @@
       left: 9px;
 
       background-size: 33px 22px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .input-field__icon {
+    &--phone {
+      right: 5px;
+    }
+
+    &--mail {
+      right: 4px;
     }
   }
 }

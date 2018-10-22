@@ -3,12 +3,12 @@ var modalBasketAdd = document.querySelector(".js-modal-basket-add");
 
 if (modalBasketAdd){
   var openButtons = document.querySelectorAll(".js-basket-add");
-  openButtons.forEach(element => {
-    element.addEventListener("click", function (evt) {
+  for(var i = 0; i < openButtons.length; i++) {
+    openButtons[i].addEventListener("click", function (evt) {
       evt.preventDefault();
       modalBasketAdd.classList.add("modal--show");
     });
-  });
+  }
 
   var closeModal = function() {
     if (modalBasketAdd.classList.contains("modal--show")) {

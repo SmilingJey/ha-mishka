@@ -4,15 +4,18 @@
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <script src="https://api-maps.yandex.ru/2.1/?apikey=17ceedee-6a89-4b21-bc3e-f4ae5e5d795a&lang=ru_RU">
     </script>
     <script>
-      document.createElement( "picture" );
+      document.createElement("picture");
     </script>
-    <script src="js/picturefill.js" async></script>
+    <script src="js/picturefill.min.js" async></script>
   </head>
   <body>
+    <div style="display: none;">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <header class="page-header page-header--nojs page-header--menu-close">
       <div class="page-header__inner">
         <p class="page-header__logo">
@@ -38,13 +41,13 @@
         <div class="page-header__search-cart">
           <a class="page-header__search header-link header-link--tablet-only-icon" href="">
             <span class="header-link__icon">
-                <img src="img/icon-search.svg" alt="поиск">
+              <svg width="18" height="18" aria-label="поиск по сайти"><use xlink:href="#icon-search"></use></svg>
             </span>
             <span class="header-link__text">Поиск по сайту</span>
           </a>
           <a class="page-header__card header-link" href="">
             <span class="header-link__icon">
-            <img src="img/icon-cart.svg" alt="поиск">
+              <svg width="21" height="19" aria-label="корзина"><use xlink:href="#icon-cart"></use></svg>
             </span>
             <span class="header-link__text">Корзина: пока пуста</span>
           </a>
@@ -60,7 +63,7 @@
           </div>
           <ul class="intro__categories">
             <li class="intro__category"><a class="intro__link intro__link--design" href="#"><span class="intro__category-name">Предметы интерьера</span></a></li>
-            <li class="intro__category intro__category--"><a class="intro__link intro__link--toys" href="#"><span class="intro__category-name">Детские игрушки</span></a></li>
+            <li class="intro__category"><a class="intro__link intro__link--toys" href="#"><span class="intro__category-name">Детские игрушки</span></a></li>
           </ul>
         </div>
       </section>
@@ -90,6 +93,9 @@
               </table>
             </div>
             <picture class="goods-week__picture">
+              <source type="image/webp" media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.webp 1x, img/triple-set-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/triple-set-mobile@2x.webp 1x, img/triple-set-mobile@2x.webp 2x">
               <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
               <img class="goods-week__image" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязаные корзинки">
@@ -152,6 +158,9 @@
           <div id="yandex-map" class="contacts__map contacts__map--nojs">
             <a href="https://yandex.ru/maps/-/CBBWABasHD" target="_blank">
               <picture>
+                <source type="image/webp" media="(min-width: 1150px)" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/map-mobile@1x.webp, img/map-mobile@2x.webp 2x">
                 <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
                 <img src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Карта расположения магазина">
@@ -164,20 +173,33 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__inner">
-        <a class="page-footer__logo"><img class="page-footer__logo-img" src="img/logo-footer.svg" width="102" height="34" alt="Логотип Мишка"></a>
+        <p class="page-footer__logo">
+          <a>
+            <svg class="page-footer__logo-img" width="102" height="34" aria-label="Логотип Мишка"><use xlink:href="#logo-footer"></use></svg>
+          </a>
+        </p>
         <ul class="page-footer__social social">
           <li class="social__item">
-            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy"><img src="img/icon-insta.svg" width="22" height="21" alt="Инстаграм"><span class="visually-hidden">Мы в Инстаграме</span></a>
+            <a class="social__link" href="https://www.instagram.com/htmlacademy">
+              <svg width="22" height="21" aria-label="Инстаграм"><use xlink:href="#icon-insta"></use></svg>
+              <span class="visually-hidden">Мы в Инстаграме</span>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><img src="img/icon-fb.svg" width="15" height="29" alt="Фейсбук"><span class="visually-hidden">Мы в Фейсбуке</span></a>
+            <a class="social__link" href="https://www.facebook.com/htmlacademy">
+              <svg width="15" height="29" aria-label="Фейсбук"><use xlink:href="#icon-fb"></use></svg>
+              <span class="visually-hidden">Мы в Фейсбуке</span>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru"><img src="img/icon-twitter.svg" width="23" height="20"  alt="Твиттер"><span class="visually-hidden">Мы в Твиттере</span></a>
+            <a class="social__link" href="https://twitter.com/htmlacademy_ru">
+              <svg width="23" height="20" aria-label="Твиттер"><use xlink:href="#icon-twitter"></use></svg>
+              <span class="visually-hidden">Мы в Твиттере</span>
+            </a>
           </li>
         </ul>
         <p class="page-footer__copyright">
-          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">Разработано<span class="visually-hidden"> в HTML Academy</span>
+          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">Разработано<span class="visually-hidden"> в HTML Academy</span><svg class="page-footer__copyright-icon" width="27" height="34" aria-label="Твиттер"><use xlink:href="#logo-htmlacademy"></use></svg>
           </a>
         </p>
       </div>
@@ -191,17 +213,15 @@
           <div class="basket-add__size-buttons">
             <input class="visually-hidden basket-add__radio" type="radio" id="size-s" name="size" value="s" checked>
             <label class="basket-add__size" for="size-s" tabindex="0">S</label>
-            <input class="visually-hidden basket-add__radio" type="radio" id="size-m" name="size"  value="m">
+            <input class="visually-hidden basket-add__radio" type="radio" id="size-m" name="size" value="m">
             <label class="basket-add__size" for="size-m" tabindex="0">M</label>
-            <input class="visually-hidden basket-add__radio" type="radio" id="size-l" name="size"  value="l">
+            <input class="visually-hidden basket-add__radio" type="radio" id="size-l" name="size" value="l">
             <label class="basket-add__size" for="size-l" tabindex="0">L</label>
           </div>
           <button class="basket-add__button button button--add" type="submit">Добавить</button>
         </form>
       </div>
     </section>
-    <script src="js/main-menu.js"></script>
-    <script src="js/modal-basket.js"></script>
-    <script src="js/yandex-map.js"></script>
+    <script src="js/scripts.min.js"></script>
   </body>
 </html>
