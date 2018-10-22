@@ -17,6 +17,7 @@ var uglify = require('gulp-uglify-es').default;
 var concat = require('gulp-concat');
 var del = require('del');
 var cheerio = require('gulp-cheerio');
+const htmlmin = require('gulp-htmlmin');
 
 var concatScripts = [
   'build/js/yandex-map.js',
@@ -100,6 +101,7 @@ gulp.task('html', function () {
     .pipe(posthtml([
       htmlinclude()
     ]))
+    .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('build/'));
 });
 
@@ -111,7 +113,7 @@ gulp.task('concatjs', function () {
 });
 
 gulp.task('minjs', function () {
-  return gulp.src('build/js/**/*.js')
+  return gulp.src(['build/js/**/*.js', '!build/js/**/*.min.js'])
     .pipe(plumber())
     .pipe(uglify())
     .pipe(rename({
