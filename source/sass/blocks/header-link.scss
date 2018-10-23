@@ -28,6 +28,7 @@
 .header-link__icon {
   width: 46px;
   margin-top: 5px;
+  overflow: hidden;
 }
 
 @media (min-width: $tablet-width) {
