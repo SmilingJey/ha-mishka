@@ -5,6 +5,8 @@
 }
 
 .aboutus__header {
+  margin-bottom: 25px;
+
   font-weight: bold;
   font-size: 25px;
   line-height: 1.2;
@@ -19,7 +21,7 @@
 
 .aboutus__item {
   width: 260px;
-  margin-bottom: 25px;
+  margin-bottom: 23px;
 
   font-weight: bold;
   font-size: 17px;
@@ -33,7 +35,7 @@
     height: 60px;
 
     background-repeat: no-repeat;
-    background-position: 10px 10px;
+    background-position: 8px 8px;
   }
 
   &--ecology::before {
@@ -67,12 +69,14 @@
 
 @media (min-width: $tablet-width) {
   .aboutus__inner {
-    padding-top: 15px;
+    padding-top: 12px;
     padding-right: 50px;
     padding-left: 50px;
   }
 
   .aboutus__header {
+    margin-bottom: 40px;
+
     font-size: 43px;
     line-height: 50px;
   }
@@ -106,6 +110,7 @@
   }
 
   .aboutus__header {
+    margin-top: 50px;
     margin-bottom: 40px;
 
     font-size: 53px;

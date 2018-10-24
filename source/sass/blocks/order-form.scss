@@ -22,11 +22,11 @@
 }
 
 .order-form__phone {
-  margin-bottom: 5px;
+  margin-bottom: 7px;
 }
 
 .order-form__email {
-  margin-bottom: 5px;
+  margin-bottom: 6px;
 }
 
 .order-form__comment {
@@ -73,7 +73,7 @@
 
   .order-form__color {
     margin-right: -50px;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
   }
 
   .order-form__fio {
@@ -86,7 +86,7 @@
 
   .order-form__email {
     margin-top: -50px;
-    margin-bottom: 0;
+    margin-bottom: 5px;
   }
 
   .order-form__comment {
@@ -122,7 +122,11 @@
   }
 
   .order-form__color {
-    padding-bottom: 10px;
+    padding-bottom: 20px;
+  }
+
+  .order-form__comment {
+    margin-bottom: 30px;
   }
 
   .order-form__intro-text,

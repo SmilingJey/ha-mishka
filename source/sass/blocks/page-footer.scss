@@ -35,7 +35,7 @@
 }
 
 .page-footer__copyright {
-  margin-top: 5px;
+  margin-top: 0;
 
   text-align: center;
 }
@@ -45,6 +45,7 @@
   font-size: 19px;
   color: #000000;
   text-decoration: none;
+
   fill: #63d1bb;
 
   &:hover {
@@ -57,9 +58,10 @@
 }
 
 .page-footer__copyright-icon {
-  vertical-align: middle;
   display: inline-block;
   margin-left: 30px;
+
+  vertical-align: middle;
 }
 
 @media (min-width: $tablet-width) {

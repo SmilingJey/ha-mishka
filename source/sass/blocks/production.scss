@@ -113,7 +113,7 @@
 
 @media (min-width: $tablet-width) {
   .production {
-    margin-bottom: 65px;
+    margin-bottom: 63px;
     padding: 0 50px 0;
   }
 
@@ -137,7 +137,8 @@
 
   .production__header {
     order: 1;
-    margin-bottom: 17px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 
     font-size: 20px;
     line-height: 24px;
@@ -192,6 +193,7 @@
     flex-direction: column;
     align-items: flex-start;
     order: 1;
+    margin-top: 23px;
     margin-bottom: 17px;
 
     font-size: 20px;

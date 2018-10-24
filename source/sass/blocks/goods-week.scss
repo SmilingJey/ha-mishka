@@ -1,4 +1,4 @@
-.doods-week__inner {
+.goods-week__inner {
   box-sizing: border-box;
   padding-top: 30px;
   padding-right: 30px;
@@ -76,7 +76,8 @@
 }
 
 .goods-week__price {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
+
   font-weight: bold;
   font-size: 17px;
   text-align: center;
@@ -84,10 +85,11 @@
 }
 
 @media (min-width: $tablet-width) {
-  .doods-week__inner {
+  .goods-week__inner {
     padding-right: 50px;
-    padding-left: 50px;
     padding-bottom: 60px;
+    padding-left: 50px;
+
     background-size: auto 15px;
   }
 
@@ -114,6 +116,7 @@
 
   .goods-week__desc {
     position: relative;
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -149,18 +152,19 @@
 
   .goods-week__price {
     margin-bottom: 35px;
+
     font-size: 20px;
     line-height: 24px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .doods-week__inner {
+  .goods-week__inner {
     position: relative;
 
     max-width: 1050px;
     margin: 0 auto;
-    padding-top: 25px;
+    padding-top: 20px;
     padding-right: 0;
     padding-bottom: 85px;
     padding-left: 175px;
@@ -170,7 +174,7 @@
 
   .goods-week__head {
     position: absolute;
-    top: 110px;
+    top: 105px;
     left: 40px;
     z-index: 1;
 
@@ -192,7 +196,7 @@
 
   .goods-week__text {
     margin-bottom: 48px;
-    padding-top: 165px;
+    padding-top: 170px;
   }
 
   .goods-week__picture {

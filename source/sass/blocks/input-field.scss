@@ -113,13 +113,12 @@
   }
 }
 
-
 .input-field__input--text {
   box-sizing: border-box;
   width: 100%;
   margin-top: 15px;
   margin-bottom: 15px;
-  padding-bottom: 18px;
+  padding-bottom: 17px;
 
   font-size: 17px;
   line-height: 18px;
@@ -156,6 +155,7 @@
 
 .input-field__icon {
   position: absolute;
+
   opacity: 0.2;
 
   &--phone {
@@ -171,8 +171,9 @@
 
 .input-field--with-icon .input-field__input--text:hover + .input-field__icon,
 .input-field--with-icon .input-field__input--text:focus + .input-field__icon {
-  fill: #62d1ba;
   opacity: 1;
+
+  fill: #62d1ba;
 }
 
 .input-field__input--textarea {
@@ -254,7 +255,7 @@
   }
 
   .input-field__input--radio + .input-field__label {
-    margin-bottom: 25px;
+    margin-bottom: 26px;
     padding-top: 17px;
     padding-bottom: 17px;
     padding-left: 80px;
@@ -277,7 +278,7 @@
   }
 
   .input-field__input--checkbox + .input-field__label {
-    margin-bottom: 25px;
+    margin-bottom: 23px;
     padding-top: 17px;
     padding-bottom: 17px;
     padding-left: 80px;

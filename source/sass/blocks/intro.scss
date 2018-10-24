@@ -31,6 +31,7 @@
 .intro__categories {
   display: flex;
   flex-direction: column;
+  align-items: stretch;
   margin: 0;
   padding: 0;
 
@@ -38,15 +39,10 @@
 }
 
 .intro__category {
-  flex-grow: 1;
-
-  background-color: #63d1bb;
-}
-
-.intro__link {
   position: relative;
 
   display: block;
+  flex-grow: 1;
   box-sizing: border-box;
   width: 100%;
   padding-top: 28px;
@@ -54,6 +50,8 @@
   padding-left: 30px;
 
   text-decoration: none;
+
+  background-color: #63d1bb;
 
   &:hover {
     &::before {
@@ -137,6 +135,7 @@
 
       background-image: url("../img/bg-zigzag-fill.svg");
       background-repeat: repeat-x;
+      background-size: auto 25px;
     }
   }
 
@@ -166,7 +165,7 @@
     padding-left: 50px;
   }
 
-  .intro__link {
+  .intro__category {
     display: block;
     min-height: 123px;
     padding-top: 28px;
@@ -195,6 +194,12 @@
 }
 
 @media (min-width: $desktop-width) {
+  .intro {
+    &::after {
+      background-size: auto 35px;
+    }
+  }
+
   .intro__inner {
     max-width: 1150px;
     margin: 0 auto;

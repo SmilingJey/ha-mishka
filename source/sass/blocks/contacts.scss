@@ -4,7 +4,7 @@
 
 .contacts__header {
   margin-right: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   margin-left: 30px;
 
   font-weight: bold;
@@ -14,7 +14,7 @@
 
 .contacts__data {
   margin-right: 20px;
-  margin-bottom: 35px;
+  margin-bottom: 40px;
   margin-left: 30px;
 }
 
@@ -26,7 +26,8 @@
 .contacts__item-name {
   width: 77px;
 
-  vertical-align: top;
+  font-size: 15px;
+  line-height: 30px;
   color: #444444;
 }
 
@@ -70,7 +71,7 @@
 .contacts__map {
   width: 100%;
   height: 457px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   overflow: hidden;
 
   a {
@@ -81,18 +82,20 @@
     position: relative;
 
     &::before {
-      position: absolute;
       content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
       z-index: 1;
+
       display: block;
       width: 67px;
       height: 100px;
-      top: 50%;
-      left: 50%;
-      transform: translateX(-50%) translateY(-60%);
+
       background-image: url("../img/map-pin.png");
       background-repeat: no-repeat;
       background-position: 50% 50%;
+      transform: translateX(-50%) translateY(-60%);
     }
 
     a {
@@ -101,9 +104,11 @@
 
     img {
       position: relative;
-      width: 100%;
-      left: 50%;
       top: 50%;
+      left: 50%;
+
+      width: 100%;
+
       transform: translateX(-50%) translateY(-50%);
     }
   }
@@ -119,6 +124,7 @@
   .contacts__header {
     position: relative;
 
+    margin-top: 40px;
     margin-right: 50px;
     margin-bottom: 30px;
     margin-left: 50px;
@@ -129,8 +135,8 @@
     &::after {
       content: "";
       position: absolute;
-      top: -15px;
-      right: -3px;
+      top: -18px;
+      right: 0;
 
       display: block;
       width: 47px;
@@ -145,7 +151,7 @@
     display: flex;
     flex-wrap: wrap;
     margin-right: 50px;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     margin-left: 50px;
   }
 
@@ -178,9 +184,9 @@
 @media (min-width: $desktop-width) {
   .contacts__inner {
     position: relative;
-    min-height: 508px;
 
     max-width: 1050px;
+    min-height: 508px;
     margin-right: auto;
     margin-bottom: 105px;
     margin-left: auto;
@@ -188,7 +194,7 @@
 
   .contacts__header {
     width: 30%;
-    margin-top: 120px;
+    margin-top: 125px;
     padding-left: 120px;
 
     font-size: 53px;
@@ -213,8 +219,9 @@
 
   .contacts__map {
     position: absolute;
-    top: 70px;
+    top: 75px;
     right: 0;
+
     width: 50%;
   }
 

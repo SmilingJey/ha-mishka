@@ -9,18 +9,23 @@
   font-weight: bold;
   font-size: 17px;
   color: rgba(0, 0, 0, 1);
-
   text-decoration: none;
 
   border-top: 1px solid #ececec;
 
   &:hover {
     color: rgba(0, 0, 0, 0.6);
+
     fill: #63d1bb;
+
+    .header-link__icon {
+      opacity: 1;
+    }
   }
 
   &:active {
     color: rgba(0, 0, 0, 0.3);
+
     fill: rgba(#63d1bb, 0.3);
   }
 }
@@ -29,6 +34,8 @@
   width: 46px;
   margin-top: 5px;
   overflow: hidden;
+
+  opacity: 0.2;
 }
 
 @media (min-width: $tablet-width) {

@@ -8,6 +8,8 @@
 }
 
 .reviews__header {
+  margin-bottom: 25px;
+
   font-weight: bold;
   font-size: 25px;
   line-height: 30px;
@@ -31,7 +33,7 @@
 
 .reviews__nikname {
   margin-top: 3px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 
   font-size: 17px;
   line-height: 30px;
@@ -41,7 +43,7 @@
 .reviews__buttons {
   display: flex;
   width: 100%;
-  margin-bottom: 35px;
+  margin-bottom: 40px;
 }
 
 .reviews__button {
@@ -93,8 +95,9 @@
   }
 
   .reviews__header {
-    margin-bottom: 50px;
     width: 70%;
+    margin-bottom: 50px;
+
     font-size: 43px;
     line-height: 50px;
   }
@@ -132,8 +135,8 @@
 
   .reviews__write {
     position: absolute;
-    top: 115px;
-    right: 45px;
+    top: 110px;
+    right: 50px;
 
     width: 175px;
   }
@@ -144,7 +147,7 @@
     box-sizing: border-box;
     max-width: 1050px;
     margin: 0 auto;
-    padding-top: 70px;
+    padding-top: 65px;
     padding-right: 0;
     padding-bottom: 155px;
     padding-left: 175px;
@@ -154,8 +157,9 @@
   }
 
   .reviews__header {
-    margin-bottom: 45px;
     width: 650px;
+    margin-bottom: 50px;
+
     font-size: 53px;
     line-height: 57px;
   }
@@ -171,11 +175,11 @@
 
   .reviews__buttons {
     right: 0;
-    bottom: 150px;
+    bottom: 145px;
   }
 
   .reviews__write {
-    top: 122px;
+    top: 118px;
     right: 0;
   }
 }
