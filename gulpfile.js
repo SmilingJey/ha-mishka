@@ -39,9 +39,7 @@ var svgSpriteImages = [
 ];
 
 gulp.task('css', function () {
-  var processors = [autoprefixer({
-    browsers: ['last 2 version']
-  })];
+  var processors = [autoprefixer()];
   return gulp.src('source/sass/style.scss')
     .pipe(plumber())
     .pipe(sass())

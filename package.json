@@ -2,28 +2,28 @@
   "name": "mishka",
   "version": "15.0.0",
   "private": true,
-  "description": "Личный проект «Мишка» от HTML Academy",
+  "description": "Проект «Мишка»",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
-    "autoprefixer": "9.1.x",
-    "browser-sync": "2.24.x",
+    "autoprefixer": "^9.1.x",
+    "browser-sync": "^2.24.x",
     "del": "^3.0.0",
-    "gulp": "4.0.x",
+    "gulp": "^4.0.x",
     "gulp-cheerio": "^0.6.3",
     "gulp-concat": "^2.6.1",
     "gulp-csso": "^3.0.1",
     "gulp-htmlmin": "^5.0.1",
     "gulp-imagemin": "^4.1.0",
     "gulp-plumber": "1.2.x",
-    "gulp-postcss": "8.0.x",
+    "gulp-postcss": "^8.0.x",
     "gulp-posthtml": "^3.0.4",
     "gulp-rename": "^1.4.0",
-    "gulp-sass": "4.0.x",
+    "gulp-sass": "^4.0.x",
     "gulp-svgstore": "^7.0.0",
     "gulp-uglify-es": "^1.0.4",
     "gulp-webp": "^3.0.0",
     "posthtml-include": "^1.2.0",
-    "stylelint": "9.6.x",
+    "stylelint": "^9.6.x",
     "stylelint-config-htmlacademy": "0.1.x"
   },
   "scripts": {
@@ -31,7 +31,8 @@
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
-    "start": "gulp start"
+    "start": "gulp start",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": [
     "last 2 versions",
@@ -49,5 +50,7 @@
   "engines": {
     "node": "8.12"
   },
-  "dependencies": {}
+  "dependencies": {
+    "gh-pages": "^2.2.0"
+  }
 }
